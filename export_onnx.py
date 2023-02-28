@@ -65,8 +65,8 @@ def main():
     timm_model_names = parse_model_names("model_names/model_timm.txt")    
     export_onnx(timm_model_names, input_h, input_w, batch_size, "timm")
 
-    timm_model_names = parse_model_names("model_names/model_pytorch.txt")    
-    export_onnx(timm_model_names, input_h, input_w, batch_size, "pytorch")
+    torch_model_names = parse_model_names("model_names/model_pytorch.txt")    
+    export_onnx(torch_model_names, input_h, input_w, batch_size, "pytorch")
 
 if __name__ == '__main__':
     main()
